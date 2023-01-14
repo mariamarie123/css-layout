@@ -1,0 +1,512 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------- nav bar-------------*/
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem 7rem 4rem 7rem;
+    }
+    nav .logo a{
+        font-size: 2rem;
+        width: 20rem;
+        font-weight: 700;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        
+    }
+    nav a{
+        text-decoration: none;
+        color: #ababab;
+        }
+        nav a span{
+            color:#a0b6b3;
+        }
+        nav .navbar ul{
+            list-style: none;
+        }
+        nav a span{
+            color:#00b39b;
+        }
+        nav .navbar ul{
+            list-style: none;
+        }
+        nav .navbar ul li{
+            display: inline;
+            margin:1rem;
+        }
+        /*---------- hover--------------*/
+        nav .navbar ul li a:hover{
+            color: #00b39b;
+        }
+        /*---------------------menu invisible ou  caché-----------*/
+        #drop{
+            display: flex;
+            position: absolute;
+            background-color: #fff;
+            right: 7rem;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: stretch;
+            box-shadow: 0 1px 1px 1px #abababa4;
+            visibility: hidden;
+        }
+        #drop a {
+            
+            padding: 1rem;
+        }
+        
+        /*----  departement --------*/
+        
+        #drop:hover #drop{
+            visibility: visible;
+        }
+        /*-------- menu--------------*/
+        
+        #drop a:hover{
+            background-color:#e5faf8;
+        }
+        /*--------------Menu sur telephone -----------------*/
+        .mobile-menu{
+            
+            display: none;
+            
+        }
+        h1,h2,h3,h4{
+            color:#00b39b; 
+            font-family: 'Work Sans', sans-serif;
+            font-weight:380;
+            line-height: 2rem;
+        }
+        p{  line-height: 1.7rem;
+            margin: 1rem;
+            color:#747474;
+        }
+        body{
+            font-family: 'Nunito', sans-serif;
+            font-size: 15px;
+            color: #ababab;
+            }
+
+            ::selection{
+            background-color:#00b39b;
+                color:#e5faf8;
+            }
+            /*-------------------Section---------------------*/
+            .container{
+            margin: 0 8rem;
+            }
+            
+            .content1 {
+            height: 23rem;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            }
+            .content1 h3{
+                color: #00b39b;
+                font-size: 2rem;   
+            }
+            
+            .text-1{
+                display:flex;
+            }
+            
+            /*--------------------------cards-----------------------------*/
+            .content2{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                box-sizing: border-box;
+            }
+            
+            .card{
+                height: 23rem;
+                width: 28%;
+                display: flex;
+                flex-direction:column;
+                justify-content: space-around;
+                border-radius: 1rem;
+                color:#00b39b;
+                transition: 0.5s;
+                overflow: hidden;
+            }
+            .card:hover {
+                opacity:0.7;
+            }
+            
+            .part2,.part2 select{
+            background-color:#00b39b;
+            font-size: 1.3rem;
+            margin-bottom: 1rem; 
+            }
+            .part3,.part3 select{
+                background-color:#3d83df;
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+            .part4,.part4 select{
+              background-color:#1b2734;
+              font-size: 1.3rem;
+              margin-bottom: 1rem;
+            }
+            .card-text,.choices{
+                margin-left: 2rem;
+                width: 85%;
+                font-size: 1.3rem;
+            }
+            .card-text img, .card-text h2,.card-text h3,.card-text h4{
+                margin-bottom: 8px;
+                color: #fff;
+            }
+            .choices option{
+                font-size: 1rem;
+                color:#1b2734; ;
+                background-color: #fff ;
+            }
+            select{
+                border: transparent;
+                color: #fff;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            /*-------------------------- Logo-----------------------*/
+           .part5{
+                display: flex;
+                justify-content: space-between;
+
+            }
+           .part5-text{
+              width: 30%;
+              margin: 3rem 0 0 1rem;
+              color:#00b39b;
+            }
+
+           .Logo-links{
+            margin:3rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 68%;
+            height:5rem;
+           }
+
+          .part5-logo svg, .part5-links a{
+            margin-left: 4rem;
+            cursor:pointer;
+            text-decoration: none;
+           }
+
+          .part5-logo path{  
+           fill: hsla(0,0%,67%,.7);
+           transition: .2s;
+           }
+         .part5-links img{
+           filter:invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%) contrast(0);
+           opacity: .6;
+           transition:.2s;
+           }
+
+          .part5-links img:hover{
+           opacity:1;
+           filter:unset;
+           }
+
+         .part5-logo svg:hover path{
+           fill:#00b39b;
+           }
+           /*------------------ content2----------------------*/
+
+          .content2{
+           background-color:#e5faf8;
+            display:flex;
+            justify-content: space-between;
+            width: 100%;
+            height:40rem;
+           position: relative;
+          }
+                                   /*----Logo de background li mahebch yokhrej -_- --------*/
+            .partie1::before{
+               content:'';
+             width: 450px;
+              height:320px;
+            background-image:url(./logo1.png...);
+           position: absolute;
+           bottom: 0;
+             left:3%;
+                }
+
+         .partie1-1{
+    text-align: center;
+    margin:3rem 0 0 10rem;
+    width:30%;
+    z-index:10;
+}
+.partie1-1 h2{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+}
+
+
+
+/*--------------the container of the cards--------*/
+.container2{
+    display: flex;
+    width: 50%;    
+    align-items: baseline;
+
+}
+
+/*--------------- card-----------------*/
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:17rem;
+    height:17.5rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    margin: 1rem;
+    text-align: center;
+    color:#747474;
+    white-space: pre-line;
+} 
+.item p{
+    line-height:1.2rem;
+}
+
+/*----------icons -------------*/
+.container2 img{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width:2.5rem;
+}
+
+.item h3{
+    margin:1rem;
+}
+.container2-2-part1,.container2-2-part2{
+    z-index: 100;
+}
+
+/*------------content----------------*/
+.container3{
+    margin: 2rem 8rem 4rem 8rem;
+}
+
+.container3-text{
+    text-align: center;
+    margin: 5rem auto;
+    width:70%;
+}
+
+.container3-text h2{
+    font-size:2rem;
+}
+.Country-grid{
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.country{
+    width: 300px;
+    height: 320px;
+    margin:.7rem;
+    box-shadow: 0 1px 1px 1px #ababab23 ;
+    cursor: pointer;
+    
+}
+.country img {
+    height: 280px;
+}
+.country-nom{
+     display: flex;
+    justify-content: space-between; 
+    margin: 20px; 
+    color:#747474 ;
+    align-items: center;
+}
+.country:hover{
+    box-shadow: 0px 8px 8px 8px #ababab57;
+}
+.btn{
+    background-color: #3d83df;
+    color:#fff;
+    border: transparent;
+    padding: .7rem;
+    border-radius: .4rem;
+    opacity: .8;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.join{
+    margin:6rem auto;
+    text-align: center;
+    
+}
+.join h2{
+    color:var(--bgcolor1);
+    margin-bottom: 2rem;
+}
+
+footer a, footer p{
+
+    font-size: .7rem;
+    text-decoration: none;
+    text-align: center;
+    white-space: pre-line;
+    line-height: 1rem;
+
+}
+hr{
+    opacity: .2;
+
+}
+
+/*-------Responsive design---------*/
+@media screen and (max-width:1000px){
+    
+    .container{
+        margin:1rem;
+    }
+    nav{
+        margin:0;
+    }
+    .Country-grid{
+        flex-wrap:nowrap;
+        overflow-x: auto;
+    }
+
+}
+@media screen and (max-width:748px){
+    .container3{
+        flex-direction: column;
+    }
+    .container3-text{
+        align-self: center;
+        width: 50%;
+    }
+    .Logo-links{
+        align-self: center;
+        width: 90%;
+    }
+    .container3{
+        margin:2rem;
+    }
+    .container3-text{
+        width:80%;
+    }
+}
+
+
+@media screen and (max-width:622px){
+    header{
+        margin:2rem 0;
+    }
+    /*-------- Nav ----------*/
+    nav .logo{
+    align-self: center;
+    }
+    nav .navbar{
+    display:none;
+    }
+    .mobile-menu{
+        display:block;
+    }
+    /*------------content----------------*/
+    .content1{
+        margin:1rem 0;
+    }
+    .content1 h3{
+        width:80%;
+    }
+    .content1 img{
+        visibility: hidden;
+    }
+    .text1{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    /*-------------cards------------*/
+    
+
+    .content2{
+        display: block;
+        margin-top: 3rem ;
+    }
+    .card{
+        width: 100%;
+        
+    }
+
+    .partie1{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin: 1rem;
+    }
+    .partie1-1{
+        width:auto;
+        text-align: center;
+        margin: auto auto;
+        
+    }
+    .container2{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .container2-2-part1 ,.container2-2-part2{
+         width: 100%;
+       }
+    
+    .item{
+        width: 90%;
+        margin: .4rem auto;    
+        
+    }
+
+
+}
+@media screen and (min-width:622px)and(max-width:900px){
+.partie1{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin:1rem;
+}
+.partie1-1{
+    width:auto;
+    text-align: center;
+    margin: auto auto;
+}
+.container2-{
+    width:100%;
+    justify-content: center;
+}
+.container2-2-part1, .container2-2-part2{
+    width:45%;
+}
+.partie1::before{
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.item h3{
+    margin: .5rem;
+}
+}
